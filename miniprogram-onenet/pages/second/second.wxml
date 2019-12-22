@@ -1,0 +1,32 @@
+<view class="bg">
+<image class="bg-image"mode="scaleToFill"></image>
+</view>
+<view class="bg" style="opacity:{{1}}">
+<image class="bg-image" mode="scaleToFill"></image>
+</view>
+<view class="Tadvice">
+<view>当前宿舍温度为（摄氏度）</view>
+<view>{{temperature}}</view>
+<view>温度分析及建议</view>
+<view wx:if="{{temperature<0}}">当前温度低于冰点，不利于植株生长</view>
+<view wx:elif="{{temperature<10}}">当前温度介于冰点和10之间，植株生长无碍，但建议开暖气</view>
+<view wx:elif="{{temperature<20}}">当前温度10~20，为目标温度</view>
+<view wx:elif="{{temperature<25}}">当前温度适宜</view>
+<view wx:elif="{{temperature<35}}">温度过高，请开冷风或关闭供暖</view>
+<view wx:elif="{{temperature<45}}">失火了</view>
+</view>
+<view class="Tadvice">
+<view>当前宿舍湿度为</view>
+<view>{{humidity}}</view>
+<view>湿度分析及建议</view>
+<view wx:if= "{{humidity>40}}">当前湿度适宜，适合植物生长</view>
+<view wx:else>当前湿度过低，请打开小车加湿器</view>
+</view>
+<view class="Tadvice">
+<view>当前宿舍光照强度为（勒克斯）</view>
+<view>{{light}}</view>
+<view>光强分析及建议</view>
+<view wx:if= "{{light<600}}">光强较低，请给植株补充光照</view>
+<view wx:elif= "{{light<1200}}">光强适宜，植株生长状态良好</view>
+<view wx:else>光强较高，请避免阳光直射</view>
+</view>

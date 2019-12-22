@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/wifi_station/tianqi/tianqi",
+    "pages/second/second"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "433的智能监控系统",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "black",
+    "backgroundColor": "green",
+    "selectedColor": "red",
+    "list": [
+      {
+        "pagePath": "pages/start/start",
+        "text": "环境状况"
+      },
+      {
+        "pagePath": "pages/second/second",
+        "text": "其他"
+      }
+    ]
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,22 @@
+<!--start.wxml-->
+<view class="intro">
+  您好，欢迎使用433的环境监控及小车控制系统
+</view>
+<button class="btn1" type="default" hover-class="btn2" bindtap="navigate">查看宿舍各项指标</button>
+<view class="bg">
+<image class="bg-image"mode="scaleToFill"></image>
+</view>
+<view class="bg" style="opacity:{{1}}">
+<image class="bg-image" mode="scaleToFill"></image>
+</view>
+<view class="waterTime">
+<view>设置上一次浇水时间</view>
+<picker mode='date' bindchange='datechange' >
+<view> {{Tdate}}</view>
+</picker>
+</view>
+<view class="waterTime">
+<view>设置两次浇水间隔(天)</view>
+<input  class="input" type='number' focus bindinput="wPeriod" placeholder= '请输入'>{{wDuration}}</input>
+</view>
+
